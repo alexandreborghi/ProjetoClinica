@@ -192,7 +192,7 @@ private void configurarForm(){
                             obj.getData(),
                             obj.getCpf(),
                             obj.getHorario(),
-                            obj.getStatus() == 0 ? "Marcado" : "Adiantado"
+                            obj.getStatus() == 0 ? "Marcado" : obj.getStatus() == 1 ? "Adiantado" : "Remarcado"
                             
                         }
                     );
